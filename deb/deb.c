@@ -3,25 +3,15 @@
  
 int main()
 {
-    int i;
-    int a=0, b=0;
-    int c[10];
-    double d;
-    for (i=0; i<=12; i++)
+    int n;
+    int w=0;
+    printf("podaj potęgę dwójki");
+    scanf("%i", &n);
+    for (i=0; i<=n; i++)
     {
-        a++;
-        if(a%2==0){
-	    b++;
-            c[i]=b;	
-	}
-	else{
-	    c[i]=0;	
-	}
+      w*=2;
     }
-    for (i=0; i<=12; i++)
-    {
-        printf("%i ", c[i]);
-    }
-
+    printf("%i ", w);
+	
     return 0;
 }
